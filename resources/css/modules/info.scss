@@ -1,0 +1,20 @@
+.info {
+    display: grid;
+    grid-template-columns: 1fr auto;
+
+    > * > * {
+        display: inline-block;
+    }
+
+    a {
+        padding: var(--padding);
+        font-size: 12px;
+        font-weight: 400;
+        background: var(--color_green);
+        color: white;
+
+        * {
+            color: white;
+        }
+    }
+}

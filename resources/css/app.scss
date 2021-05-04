@@ -1,0 +1,214 @@
+@import "resources/css/calendar";
+@import "resources/css/modules/info";
+
+:root {
+    --color_black: rgba(29, 33, 41, 0.8);
+    --color_light_black: rgba(29, 33, 41, 0.1);
+    --color_green: #23c6c8;
+    --left_menu: 11vw;
+    --padding: 10px;
+    --padding_block: 200px;
+    --font_light: 12px;
+}
+
+* {
+    color: var(--color_black);
+}
+
+.d-none {
+    display: none;
+}
+
+body {
+    background: rgb(243, 243, 244);
+}
+.avatar{
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+    img {
+        height: inherit;
+    }
+}
+nav {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    justify-items: start;
+    padding: var(--padding) var(--padding_block);
+    background: white;
+    .user_profiles{
+        display: grid;
+        align-items: center;
+        grid-template-columns: auto 1fr;
+        > *{
+            margin: 0 5px;
+        }
+    }
+}
+main{
+    padding: var(--padding) var(--padding_block);
+}
+.menu {
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+
+    .line .spans, .line::after, .line::before {
+        display: block;
+        content: '';
+        margin: 3px 0;
+        height: 2px;
+        width: 20px;
+        border-radius: 3px;
+        background: var(--color_black);
+    }
+}
+
+
+
+.hr {
+    display: inline-block;
+    border-bottom: 1px dashed var(--color_light_black);
+    width: 100%;
+    margin: auto;
+}
+
+.hr_vert {
+    margin: 0 calc(var(--padding) * 2);
+    height: 100%;
+    width: 1px;
+    border-left: 1px dashed var(--color_light_black);
+}
+line{
+    margin: 20px;
+    display: block;
+}
+.left_menu {
+    top: 0;
+    left: 0;
+    height: calc(100% - (var(--padding) * 2));
+    width: var(--left_menu);
+    list-style-type: none;
+    margin-right: var(--padding);
+    letter-spacing: 1px;
+    line-height: 2em;
+    padding: var(--padding);
+    padding-left: 0;
+
+    a:hover * {
+        color: black;
+    }
+
+    a:hover {
+        background: var(--color_light_black);
+    }
+
+    > * {
+        color: var(--color_black);
+        display: block;
+        text-decoration: none;
+    }
+}
+//
+//.content {
+//    padding-right: 100px;
+//}
+
+.content .info, .comment .schedule_block {
+    border-radius: 1px;
+    border: 1px solid var(--color_light_black);
+    padding: var(--padding);
+    margin: var(--padding) 0;
+    background: white;
+}
+.content .info *{
+    margin: 0 2px;
+}
+
+.comment {
+    display: grid;
+    grid-template-columns: auto 1fr;
+
+    .user_info {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        align-items: center;
+        grid-gap: var(--padding);
+    }
+
+    .img {
+        border: 1px solid var(--color_light_black);
+    }
+
+    .list {
+        padding: var(--padding) 0;
+    }
+
+    .lesson {
+        display: grid;
+        grid-gap: var(--padding);
+        grid-template-columns: 5fr 3fr;
+    }
+
+    .right_menu {
+        ul {
+            line-height: 2em;
+            display: grid;
+            grid-template-columns: 1fr auto;
+        }
+
+        p {
+            text-align: end;
+        }
+    }
+}
+
+.schedule * {
+    font-size: var(--font_light);
+}
+
+.schedule_block {
+    .card {
+        padding: var(--padding);
+        display: grid;
+        grid-template-columns: 1fr 1fr auto;
+        align-items: center;
+        border-bottom: 1px solid var(--color_light_black);
+    }
+
+    .card:nth-child(1) {
+        border-top: 1px solid var(--color_light_black);
+    }
+
+    .day {
+        line-height: 1.5em;
+    }
+
+    .day_info * {
+        margin-left: 5px;
+        padding: 2px;
+        display: inline-block;
+    }
+}
+
+.calendar_bd {
+    position: relative;
+    overflow: hidden;
+}
+
+.card_element {
+    position: relative;
+}
+
+.card_calendar {
+    //z-index: 1;
+    position: absolute;
+    //top: 0;
+    width: calc(100% - 20px);
+    background: rgb(254, 241, 236);
+    border-bottom: 5px solid rgb(168, 168, 168);
+    padding: 5px 10px;
+}

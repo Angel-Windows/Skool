@@ -1,0 +1,163 @@
+/*:root{*/
+/*    --color_black: rgba(29, 33, 41, 0.8);*/
+/*    --color_light_black: rgba(29, 33, 41, 0.1);*/
+/*    --color_green: #23c6c8;*/
+/*    --left_menu: 11vw;*/
+/*    --padding: 10px;*/
+/*    --font_light: 12px;*/
+/*}*/
+/**{*/
+/*    color: var(--color_black);*/
+/*    margin: 0;*/
+/*    list-style: none;*/
+/*    padding: 0;*/
+/*}*/
+/*.d-none{*/
+/*    display: none;*/
+/*}*/
+/*!*.menu{*!*/
+/*!*    margin: auto;*!*/
+/*!*    margin-right: var(--padding);*!*/
+/*!*}*!*/
+/*.menu{*/
+/*    height: 100%;*/
+/*    display: grid;*/
+/*    grid-template-columns: auto auto auto;*/
+/*    align-items: center;*/
+/*}*/
+/*!*.menu .line .spans{*!*/
+/*.menu .line .spans, .menu .line::after, .menu .line::before{*/
+/*    display: block;*/
+/*    content: '';*/
+/*    margin: 3px 0;*/
+/*    height: 2px;*/
+/*    width: 20px;*/
+/*    border-radius: 3px;*/
+/*    background: var(--color_black);*/
+/*}*/
+/*body{*/
+/*    background: rgb(243, 243, 244);*/
+/*}*/
+/*nav{*/
+/*    display: grid;*/
+/*    grid-template-columns: 1fr auto;*/
+/*    align-items: center;*/
+/*    justify-items: start;*/
+/*    !*margin: 0 calc(var(--padding) * 2);*!*/
+/*    padding: var(--padding) calc(var(--padding) * 2);*/
+/*    background: white;*/
+/*}*/
+/*.hr{*/
+/*    display: inline-block;*/
+/*    border-bottom: 1px dashed var(--color_light_black);*/
+/*    width: 100%;*/
+/*    margin: auto;*/
+/*}*/
+/*.hr_vert{*/
+/*    margin: 0 calc(var(--padding) * 2);*/
+/*    height: 100%;*/
+/*    width: 1px;*/
+/*    border-left: 1px dashed var(--color_light_black);*/
+/*}*/
+/*.left_menu{*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    height: calc(100% - (var(--padding) * 2));*/
+/*    width: var(--left_menu);*/
+/*    list-style-type: none;*/
+/*    margin: 0 var(--padding);*/
+/*    letter-spacing: 1px;*/
+/*    line-height: 2em;*/
+/*    padding: var(--padding);*/
+/*}*/
+/*.left_menu a:hover *{*/
+/*    color: black;*/
+/*}*/
+/*.left_menu a:hover{*/
+/*    background: var(--color_light_black);*/
+/*}*/
+/*.content{*/
+/*    padding: var(--padding);*/
+/*}*/
+/*.comment .info, .comment .schedule_block{*/
+/*    border-radius: 1px;*/
+/*    border: 1px solid var(--color_light_black);*/
+/*    padding: var(--padding);*/
+/*    margin: var(--padding);*/
+/*    background: white;*/
+/*}*/
+/*.comment .info a{*/
+/*    display: inline-block;*/
+/*    padding: var(--padding);*/
+/*    font-size: 12px;*/
+/*    font-weight: 400;*/
+/*    background: var(--color_green);*/
+/*    color: white;*/
+/*}*/
+/*.comment .info a *{*/
+/*    color: white;*/
+/*}*/
+/*.left_menu > *{*/
+/*    color: var(--color_black);*/
+/*    display: block;*/
+/*    text-decoration: none;*/
+/*}*/
+/*.comment{*/
+/*    display: grid;*/
+/*    grid-template-columns: auto 1fr ;*/
+/*}*/
+/*.comment .user_info{*/
+/*    display: grid;*/
+/*    grid-template-columns: auto 1fr auto;*/
+/*    align-items: center;*/
+/*    grid-gap: var(--padding);*/
+/*}*/
+/*.comment .img {*/
+/*    padding: 1px;*/
+/*    border: 1px solid var(--color_light_black);*/
+/*    border-radius: 50%;*/
+/*}*/
+/*nav .user_profiles *{*/
+/*    display: inline-block;*/
+/*}*/
+/*.avatar img{*/
+/*    border-radius: 50%;*/
+/*    height: 50px;*/
+/*}*/
+/*.comment .list{*/
+/*    padding: var(--padding) 0;*/
+/*}*/
+/*.schedule_block .card{*/
+/*    padding: var(--padding);*/
+/*    display: grid;*/
+/*    grid-template-columns: 1fr 1fr auto;*/
+/*    align-items: center;*/
+/*    border-bottom: 1px  solid var(--color_light_black);*/
+/*}*/
+/*.schedule_block .card:nth-child(1){*/
+/*    border-top: 1px  solid var(--color_light_black);*/
+/*}*/
+/*.comment .lesson{*/
+/*    display: grid;*/
+/*    grid-template-columns: 5fr 3fr;*/
+/*}*/
+/*.schedule *{*/
+/*    font-size: var(--font_light);*/
+/*}*/
+/*.schedule_block .day{*/
+/*    line-height: 1.5em;*/
+/*}*/
+/*.schedule_block .day_info *{*/
+/*    margin-left: 5px;*/
+/*    padding: 2px;*/
+/*    display: inline-block;*/
+/*}*/
+
+/*.comment .right_menu ul{*/
+/*    line-height: 2em;*/
+/*    display: grid;*/
+/*    grid-template-columns: 1fr auto;*/
+/*}*/
+/*.comment .right_menu p{*/
+/*    text-align: end;*/
+/*}*/
